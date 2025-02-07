@@ -1,18 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue: #5264ff;
+  --color-blueLight: #7d8bff;
+  --color-textLight: #404040;
+  --color-textDark: #fbfbfb;
+  --color-grayBg: #d3d3d3;
+  --color-orang: #ff782c;
+  --color-orangBg: #ffaa7c33;
+  --color-darkBgInLight: #232323;
+  --color-darkBg: #1e1e1e;
+  --color-lightBg: #fffbfb;
+  --font-vazirBold: "Vazir Bold";
+  --font-vazirMedium: "Vazir Medium";
+  --font-IranBold: "Iran bold";
+  --font-IranLight: "Iran Light";
+  --font-IranMedium: "Iran Medium";
+  --font-RokhBold: "Rokh Bold";
+  --font-RokhSemibold: "Rokh Semibold";
+  --font-RokhMedium: "Rokh Medium";
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+}
 /* ------------font poppins---------------- */
 @font-face {
-  font-family: "Poppins Bold";
-  src: local("Poppins Bold");
-  src: url(../font/poppins/poppins-bold-webfont.woff) format(woff);
+  font-family: "Vazir Bold";
+  src: local("Vazir Bold");
+  src: url(../font/vazir/Vazir-Bold.woff) format(woff);
 }
 @font-face {
-  font-family: "Poppins Medium";
-  src: local("Poppins Medium");
-  src: url(../font/poppins/poppins-medium-webfont.woff) format(woff);
-}
-@font-face {
-  font-family: "Poppins Semibold";
-  src: local("Poppins Semibold");
-  src: url(../public/font/poppins/poppins-semibold-webfont.woff) format(woff);
+  font-family: "Vazir Medium";
+  src: local("Vazir Medium");
+  src: url(../font/vazir/Vazir-Medium.woff) format(woff);
 }
 /* ------------font iran---------------- */
 @font-face {
@@ -45,30 +65,4 @@
   font-family: "Rokh Medium";
   src: local("Rokh Medium");
   src: url(../font/rokh/Rokh-Medium.woff) format(woff);
-}
-@import "tailwindcss";
-
-@theme {
-  --color-blue: #5264ff;
-  --color-blueLight: #7d8bff;
-  --color-textLight: #404040;
-  --color-textDark: #fbfbfb;
-  --color-grayBg: #d3d3d3;
-  --color-orang: #ff782c;
-  --color-orangBg: #ffaa7c33;
-  --color-darkBgInLight: #232323;
-  --color-darkBg: #1e1e1e;
-  --color-lightBg: #fffbfb;
-  --font-PoppinsBold: "Poppins Bold";
-  --font-PoppinsMedium: "Poppins Medium";
-  --font-PoppinsSemibold: "Poppins Semibold";
-  --font-IranBold: "Iran bold";
-  --font-IranLight: "Iran Light";
-  --font-IranMedium: "Iran Medium";
-  --font-RokhBold: "Rokh Bold";
-  --font-RokhSemibold: "Rokh Semibold";
-  --font-RokhMedium: "Rokh Medium";
-  --breakpoint-tablet: 40rem;
-  --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 80rem;
 }

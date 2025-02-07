@@ -1,49 +1,4 @@
 /*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
-@font-face {
-  font-family: "Poppins Bold";
-  src: local("Poppins Bold");
-  src: url(../font/poppins/poppins-bold-webfont.woff) format(woff);
-}
-@font-face {
-  font-family: "Poppins Medium";
-  src: local("Poppins Medium");
-  src: url(../font/poppins/poppins-medium-webfont.woff) format(woff);
-}
-@font-face {
-  font-family: "Poppins Semibold";
-  src: local("Poppins Semibold");
-  src: url(../public/font/poppins/poppins-semibold-webfont.woff) format(woff);
-}
-@font-face {
-  font-family: "Iran Bold";
-  src: local("Iran Bold");
-  src: url(../font/iran/iransansdnbold.woff2) format(woff);
-}
-@font-face {
-  font-family: "Iran Light";
-  src: local("Iran Light");
-  src: url(../font/iran/iransansdnlight.woff2) format(woff);
-}
-@font-face {
-  font-family: "Iran Medium";
-  src: local("Iran Medium");
-  src: url(../font/iran/iransansdn.woff2) format(woff);
-}
-@font-face {
-  font-family: "Rokh Bold";
-  src: local("Rokh Bold");
-  src: url(../font/rokh/Rokh-Bold.woff) format(woff);
-}
-@font-face {
-  font-family: "Rokh Semibold";
-  src: local("Rokh Semibold");
-  src: url(../font/rokh/Rokh-SemiBold.woff) format(woff);
-}
-@font-face {
-  font-family: "Rokh Medium";
-  src: local("Rokh Medium");
-  src: url(../font/rokh/Rokh-Medium.woff) format(woff);
-}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -432,9 +387,8 @@
     --color-darkBgInLight: #232323;
     --color-darkBg: #1e1e1e;
     --color-lightBg: #fffbfb;
-    --font-PoppinsBold: "Poppins Bold";
-    --font-PoppinsMedium: "Poppins Medium";
-    --font-PoppinsSemibold: "Poppins Semibold";
+    --font-vazirBold: "Vazir Bold";
+    --font-vazirMedium: "Vazir Medium";
     --font-IranBold: "Iran bold";
     --font-IranLight: "Iran Light";
     --font-IranMedium: "Iran Medium";
@@ -878,6 +832,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1724,11 +1681,11 @@
   .font-IranMedium {
     font-family: var(--font-IranMedium);
   }
-  .font-PoppinsMedium {
-    font-family: var(--font-PoppinsMedium);
-  }
   .font-RokhBold {
     font-family: var(--font-RokhBold);
+  }
+  .font-vazirBold {
+    font-family: var(--font-vazirBold);
   }
   .leading-none {
     --tw-leading: 1;
@@ -2253,6 +2210,46 @@
   .transform-view {
     transform-box: view-box;
   }
+}
+@font-face {
+  font-family: "Vazir Bold";
+  src: local("Vazir Bold");
+  src: url(../font/vazir/Vazir-Bold.woff) format(woff);
+}
+@font-face {
+  font-family: "Vazir Medium";
+  src: local("Vazir Medium");
+  src: url(../font/vazir/Vazir-Medium.woff) format(woff);
+}
+@font-face {
+  font-family: "Iran Bold";
+  src: local("Iran Bold");
+  src: url(../font/iran/iransansdnbold.woff2) format(woff);
+}
+@font-face {
+  font-family: "Iran Light";
+  src: local("Iran Light");
+  src: url(../font/iran/iransansdnlight.woff2) format(woff);
+}
+@font-face {
+  font-family: "Iran Medium";
+  src: local("Iran Medium");
+  src: url(../font/iran/iransansdn.woff2) format(woff);
+}
+@font-face {
+  font-family: "Rokh Bold";
+  src: local("Rokh Bold");
+  src: url(../font/rokh/Rokh-Bold.woff) format(woff);
+}
+@font-face {
+  font-family: "Rokh Semibold";
+  src: local("Rokh Semibold");
+  src: url(../font/rokh/Rokh-SemiBold.woff) format(woff);
+}
+@font-face {
+  font-family: "Rokh Medium";
+  src: local("Rokh Medium");
+  src: url(../font/rokh/Rokh-Medium.woff) format(woff);
 }
 @keyframes spin {
   to {
