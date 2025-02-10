@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/output.css">
 </head>
-<body>
-    
+<svg class="hidden">
+    <symbol id="search" viewBox="0 0 24 24" fill="currentColor">
+        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+    </symbol>
+    <symbol id="arrow-down" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+    </symbol>
+    <symbol id="shopping-bag" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M6 5v1H4.667a1.75 1.75 0 0 0-1.743 1.598l-.826 9.5A1.75 1.75 0 0 0 3.84 19H16.16a1.75 1.75 0 0 0 1.743-1.902l-.826-9.5A1.75 1.75 0 0 0 15.333 6H14V5a4 4 0 0 0-8 0Zm4-2.5A2.5 2.5 0 0 0 7.5 5v1h5V5A2.5 2.5 0 0 0 10 2.5ZM7.5 10a2.5 2.5 0 0 0 5 0V8.75a.75.75 0 0 1 1.5 0V10a4 4 0 0 1-8 0V8.75a.75.75 0 0 1 1.5 0V10Z" clip-rule="evenodd" />
+    </symbol>
+    <symbol id="user"fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+    </symbol>
+    <symbol id="bar-3" viewBox="0 0 24 24" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+    </symbol>
+      
+      
+      
+</svg>
+<body class="relative">
+     <!--
+    ===============================================================================================================
+                                          header content
+    =============================================================================================================== 
+     -->
+    <header class="h-[86px] border-b border-textLight/40">
+        <!-- -----------------container header---------------- -->
+        <div class="container px-2  xl:px-[4.5rem] h-full flex items-center justify-between">
+            <!-- -----------------icon and logo---------------- -->
+            <div class="flex items-center gap-4 lg:gap-[21px] py-2.5">
+                <div class="flex gap-1 items-center ">
+                    <img src="../imge/svg/logo.svg" alt="logo" class="">
+                    <h2 class="font-RokhBold text-2xl/[33.6px]">سفرکن</h2>
+                </div>
+                <!-- -----------------header content---------------- -->
+                <ul class="hidden md:flex items-center gap-2.5 lg:gap-4 font-IranMedium text-sm lg:text-xl">
+                    <li>
+                        <a href="#">
+                            هتل
+                        </a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="flex items-center gap-0.5 lg:gap-1.5">
+                            تور داخلی
+                        <svg class="w-5 lg:w-6 h-5 lg:h-6 text-[#292D32] group-hover:rotate-180 transition">
+                            <use href="#arrow-down"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="flex items-center gap-0.5 lg:gap-1.5">
+                            تور خارجی
+                        <svg class="w-5 lg:w-6 h-5 lg:h-6 text-[#292D32] group-hover:rotate-180 transition">
+                            <use href="#arrow-down"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            بیمه مسافرتی
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            سفرنامه
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="w-5 lg:w-6 h-5 lg:h-6 text-[#292D32]">
+                                <use href="#search"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -----------------shopping bag and login---------------- -->
+            <div class="hidden md:flex items-center gap-4 lg:gap-6">
+                <!-- -----------------shopping bag---------------- -->
+                <a href="#" class="bg-blue w-9 lg:w-[50px] h-9 lg:h-[50px] rounded-full flex items-center justify-center border border-[#4E30FF]">
+                    <svg class="w-5 lg:w-6 h-5 lg:h-6 text-white">
+                        <use href="#shopping-bag"></use>
+                    </svg>
+                </a>
+                <!-- -----------------login---------------- -->
+                <a href="#" class="flex items-center justify-center font-IranBold text-sm lg:text-xl gap-2.5 w-40 lg:w-[207px] h-10 lg:h-[54px] border rounded-4xl">
+                    <svg class="w-5 lg:w-6 h-5 lg:h-6">
+                        <use href="#user"></use>
+                    </svg>
+                    <h3>حساب کاربری</h3>
+                </a>
+                <!-- -----------------bars for navbar in mobile---------------- -->
+            </div>
+            <div>
+                <svg class="w-7 h-w-7">
+                    <use href="#bar-3"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <!-- -----------------mobile navbar---------------- -->
+    <div class="w-52 h-screen absolute right-0 top-0 z-50 bg-sky-100 p-2">
+        <div class=" flex items-center justify-center">
+            <img src="../imge/svg/logo.svg" alt="logo" class="">
+            <h2 class="font-RokhBold text-2xl/[33.6px]">سفرکن</h2>
+        </div>
+        <div class="mt-7">
+            <ul class="flex flex-col gap-5 font-IranMedium text-base">
+                <li class="li-effect">
+                    <a href="#">
+                        هتل
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="#" class="flex items-center gap-0.5 lg:gap-1.5">
+                        تور داخلی
+                    <svg class="w-5 lg:w-6 h-5 lg:h-6 text-[#292D32] group-hover:rotate-180 transition">
+                        <use href="#arrow-down"></use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="#" class="flex items-center gap-0.5 lg:gap-1.5">
+                        تور خارجی
+                    <svg class="w-5 lg:w-6 h-5 lg:h-6 text-[#292D32] group-hover:rotate-180 transition">
+                        <use href="#arrow-down"></use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="li-effect">
+                    <a href="#">
+                        بیمه مسافرتی
+                    </a>
+                </li>
+                <li class="li-effect">
+                    <a href="#">
+                        سفرنامه
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex items-center gap-3 mt-3.5">
+            <a href="#" class="bg-blue w-9 h-9 rounded-full flex items-center justify-center border border-[#4E30FF]">
+                <svg class="w-5 h-5 text-white">
+                    <use href="#shopping-bag"></use>
+                </svg>
+            </a>
+            <a href="#" class="flex items-center justify-center font-IranBold text-sm  gap-2.5 w-36 h-10 border rounded-4xl">
+                <svg class="w-5 h-5">
+                    <use href="#user"></use>
+                </svg>
+                <h3>حساب کاربری</h3>
+            </a>
+        </div>
+    </div>
+</body>
 </html>

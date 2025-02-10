@@ -395,9 +395,7 @@
     --font-RokhBold: "Rokh Bold";
     --font-RokhSemibold: "Rokh Semibold";
     --font-RokhMedium: "Rokh Medium";
-    --breakpoint-tablet: 40rem;
-    --breakpoint-laptop: 64rem;
-    --breakpoint-desktop: 80rem;
+    --container-padding: 2rem;
   }
 }
 @layer base {
@@ -605,11 +603,20 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .isolate {
     isolation: isolate;
   }
   .isolation-auto {
     isolation: auto;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .z-auto {
     z-index: auto;
@@ -685,20 +692,11 @@
     @media (width >= 40rem) {
       max-width: 40rem;
     }
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
     @media (width >= 48rem) {
       max-width: 48rem;
     }
     @media (width >= 64rem) {
       max-width: 64rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
     }
     @media (width >= 80rem) {
       max-width: 80rem;
@@ -712,20 +710,11 @@
     @media (width >= 40rem) {
       max-width: 40rem !important;
     }
-    @media (width >= 40rem) {
-      max-width: 40rem !important;
-    }
     @media (width >= 48rem) {
       max-width: 48rem !important;
     }
     @media (width >= 64rem) {
       max-width: 64rem !important;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem !important;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem !important;
     }
     @media (width >= 80rem) {
       max-width: 80rem !important;
@@ -733,6 +722,18 @@
     @media (width >= 96rem) {
       max-width: 96rem !important;
     }
+  }
+  .container {
+    margin-inline: auto;
+  }
+  .container\! {
+    margin-inline: auto !important;
+  }
+  .mt-3\.5 {
+    margin-top: calc(var(--spacing) * 3.5);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
   }
   .box-border {
     box-sizing: border-box;
@@ -821,6 +822,21 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-\[86px\] {
+    height: 86px;
+  }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -833,11 +849,26 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
   }
   .w-screen {
     width: 100vw;
@@ -1244,6 +1275,24 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1337,6 +1386,12 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1446,6 +1501,12 @@
     --tw-border-style: solid;
     border-style: solid;
   }
+  .border-\[\#4E30FF\] {
+    border-color: #4E30FF;
+  }
+  .border-textLight\/40 {
+    border-color: color-mix(in oklab, var(--color-textLight) 40%, transparent);
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1461,6 +1522,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-blue {
+    background-color: var(--color-blue);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1469,6 +1533,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-sky-100 {
+    background-color: var(--color-sky-100);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1636,6 +1703,15 @@
   .object-top {
     object-position: top;
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
   .text-center {
     text-align: center;
   }
@@ -1678,14 +1754,26 @@
   .align-top {
     vertical-align: top;
   }
+  .font-IranBold {
+    font-family: var(--font-IranBold);
+  }
   .font-IranMedium {
     font-family: var(--font-IranMedium);
   }
   .font-RokhBold {
     font-family: var(--font-RokhBold);
   }
-  .font-vazirBold {
-    font-family: var(--font-vazirBold);
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-2xl\/\[33\.6px\] {
+    font-size: var(--text-2xl);
+    line-height: 33.6px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1764,8 +1852,11 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-amber-300 {
-    color: var(--color-amber-300);
+  .text-\[\#292D32\] {
+    color: #292D32;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
@@ -2210,6 +2301,79 @@
   .transform-view {
     transform-box: view-box;
   }
+  .group-hover\:rotate-180 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 180deg;
+      }
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .lg\:h-6 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:h-\[50px\] {
+    @media (width >= 64rem) {
+      height: 50px;
+    }
+  }
+  .lg\:h-\[54px\] {
+    @media (width >= 64rem) {
+      height: 54px;
+    }
+  }
+  .lg\:w-6 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:w-\[50px\] {
+    @media (width >= 64rem) {
+      width: 50px;
+    }
+  }
+  .lg\:w-\[207px\] {
+    @media (width >= 64rem) {
+      width: 207px;
+    }
+  }
+  .lg\:gap-1\.5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 1.5);
+    }
+  }
+  .lg\:gap-4 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:gap-6 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:gap-\[21px\] {
+    @media (width >= 64rem) {
+      gap: 21px;
+    }
+  }
+  .lg\:text-xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .xl\:px-\[4\.5rem\] {
+    @media (width >= 80rem) {
+      padding-inline: 4.5rem;
+    }
+  }
 }
 @font-face {
   font-family: "Vazir Bold";
@@ -2250,6 +2414,29 @@
   font-family: "Rokh Medium";
   src: local("Rokh Medium");
   src: url(../font/rokh/Rokh-Medium.woff) format(woff);
+}
+.li-effect {
+  transition: all 200ms ease-in-out 100ms;
+  position: relative;
+}
+.li-effect::before {
+  content: " ";
+  width: 0;
+  height: 2px;
+  border-radius: 20px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 200ms ease-in-out 100ms;
+}
+.li-effect:hover {
+  padding-right: 28px;
+}
+.li-effect:hover:before {
+  width: 25px;
 }
 @keyframes spin {
   to {

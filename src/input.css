@@ -19,9 +19,7 @@
   --font-RokhBold: "Rokh Bold";
   --font-RokhSemibold: "Rokh Semibold";
   --font-RokhMedium: "Rokh Medium";
-  --breakpoint-tablet: 40rem;
-  --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 80rem;
+  --container-padding: 2rem;
 }
 /* ------------font poppins---------------- */
 @font-face {
@@ -65,4 +63,31 @@
   font-family: "Rokh Medium";
   src: local("Rokh Medium");
   src: url(../font/rokh/Rokh-Medium.woff) format(woff);
+}
+
+@utility container {
+  margin-inline: auto;
+}
+.li-effect {
+  transition: all 200ms ease-in-out 100ms;
+  position: relative;
+}
+.li-effect::before {
+  content: " ";
+  width: 0;
+  height: 2px;
+  border-radius: 20px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 200ms ease-in-out 100ms;
+}
+.li-effect:hover {
+  padding-right: 28px;
+}
+.li-effect:hover:before {
+  width: 25px;
 }
