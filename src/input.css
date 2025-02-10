@@ -83,11 +83,29 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  transition: all 200ms ease-in-out 100ms;
+  transition: all 150ms ease-in-out 100ms;
 }
 .li-effect:hover {
   padding-right: 28px;
 }
 .li-effect:hover:before {
   width: 25px;
+}
+.desktop-content {
+  position: relative;
+}
+.desktop-content::after {
+  content: " ";
+  width: 0px;
+  height: 1px;
+  background-color: #5264ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 150ms ease-in-out 100ms;
+}
+.desktop-content:hover.desktop-content::after {
+  width: 100%;
 }
