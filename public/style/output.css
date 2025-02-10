@@ -609,6 +609,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-\[-208px\] {
+    right: -208px;
+  }
   .isolate {
     isolation: isolate;
   }
@@ -728,6 +731,9 @@
   }
   .container\! {
     margin-inline: auto !important;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
@@ -849,6 +855,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -869,6 +878,9 @@
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -1275,11 +1287,17 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -1504,6 +1522,9 @@
   .border-\[\#4E30FF\] {
     border-color: #4E30FF;
   }
+  .border-textLight {
+    border-color: var(--color-textLight);
+  }
   .border-textLight\/40 {
     border-color: color-mix(in oklab, var(--color-textLight) 40%, transparent);
   }
@@ -1521,6 +1542,27 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/5 {
+    background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+  }
+  .bg-black\/10 {
+    background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
+  }
+  .bg-black\/15 {
+    background-color: color-mix(in oklab, var(--color-black) 15%, transparent);
+  }
+  .bg-black\/20 {
+    background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+  }
+  .bg-black\/25 {
+    background-color: color-mix(in oklab, var(--color-black) 25%, transparent);
+  }
+  .bg-black\/30 {
+    background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
   }
   .bg-blue {
     background-color: var(--color-blue);
@@ -1709,6 +1751,9 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
@@ -1762,6 +1807,10 @@
   }
   .font-RokhBold {
     font-family: var(--font-RokhBold);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -1854,6 +1903,9 @@
   }
   .text-\[\#292D32\] {
     color: #292D32;
+  }
+  .text-blue-900 {
+    color: var(--color-blue-900);
   }
   .text-white {
     color: var(--color-white);
@@ -2313,6 +2365,11 @@
       display: flex;
     }
   }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
   .lg\:h-6 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 6);
@@ -2424,7 +2481,7 @@
   width: 0;
   height: 2px;
   border-radius: 20px;
-  background-color: black;
+  background-color: #404040;
   position: absolute;
   right: 0;
   top: 0;

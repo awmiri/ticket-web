@@ -101,20 +101,21 @@
                 <!-- -----------------bars for navbar in mobile---------------- -->
             </div>
             <div>
-                <svg class="w-7 h-w-7">
+                <!-- -----------------bars in mobile---------------- -->
+                <svg id="fa-bar" class="w-7 h-w-7">
                     <use href="#bar-3"></use>
                 </svg>
             </div>
         </div>
     </header>
     <!-- -----------------mobile navbar---------------- -->
-    <div class="w-52 h-screen absolute right-0 top-0 z-50 bg-sky-100 p-2">
+    <div class="mobile_nav block md:hidden w-52 h-screen absolute right-[-208px] top-0 z-50 bg-sky-100 p-2 transition-all shadow">
         <div class=" flex items-center justify-center">
             <img src="../imge/svg/logo.svg" alt="logo" class="">
             <h2 class="font-RokhBold text-2xl/[33.6px]">سفرکن</h2>
         </div>
         <div class="mt-7">
-            <ul class="flex flex-col gap-5 font-IranMedium text-base">
+            <ul class="flex flex-col gap-5 font-IranMedium text-base text-blue-900">
                 <li class="li-effect">
                     <a href="#">
                         هتل
@@ -163,5 +164,8 @@
             </a>
         </div>
     </div>
+
+    <div class="dark-blank w-screen hidden h-screen absolute top-0 bg-black/5 transition-all"></div>
+    <script src="../scripts/app.js"></script>
 </body>
 </html>
