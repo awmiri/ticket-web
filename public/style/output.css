@@ -741,6 +741,12 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
+  .mr-auto {
+    margin-right: auto;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
