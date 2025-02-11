@@ -618,8 +618,17 @@
   .right-\[154px\] {
     right: 154px;
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
   .bottom-2\.5 {
     bottom: calc(var(--spacing) * 2.5);
+  }
+  .bottom-32 {
+    bottom: calc(var(--spacing) * 32);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .left-10 {
     left: calc(var(--spacing) * 10);
@@ -738,11 +747,17 @@
       max-width: 96rem !important;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .container {
     margin-inline: auto;
   }
   .container\! {
     margin-inline: auto !important;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
@@ -846,8 +861,15 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
@@ -857,6 +879,18 @@
   }
   .h-11 {
     height: calc(var(--spacing) * 11);
+  }
+  .h-\[8px\] {
+    height: 8px;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[107px\] {
+    height: 107px;
+  }
+  .h-\[10px\] {
+    height: 10px;
   }
   .h-\[80px\] {
     height: 80px;
@@ -891,11 +925,17 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
@@ -915,8 +955,20 @@
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
+  .w-\[1077\] {
+    width: 1077;
+  }
+  .w-\[10\] {
+    width: 10;
+  }
   .w-\[86px\] {
     width: 86px;
+  }
+  .w-\[8px\] {
+    width: 8px;
+  }
+  .w-\[100px\] {
+    width: 100px;
   }
   .w-\[201px\] {
     width: 201px;
@@ -926,6 +978,27 @@
   }
   .w-\[636px\] {
     width: 636px;
+  }
+  .w-\[1010px\] {
+    width: 1010px;
+  }
+  .w-\[1030px\] {
+    width: 1030px;
+  }
+  .w-\[1050px\] {
+    width: 1050px;
+  }
+  .w-\[1077px\] {
+    width: 1077px;
+  }
+  .w-\[10px\] {
+    width: 10px;
+  }
+  .w-fit {
+    width: fit-content;
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -1335,11 +1408,17 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -1358,6 +1437,12 @@
   }
   .gap-\[7px\] {
     gap: 7px;
+  }
+  .gap-\[38\.02px\] {
+    gap: 38.02px;
+  }
+  .gap-\[38px\] {
+    gap: 38px;
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1459,6 +1544,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .rounded-\[56px\] {
+    border-radius: 56px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -1506,6 +1594,9 @@
   }
   .rounded-br {
     border-bottom-right-radius: 0.25rem;
+  }
+  .rounded-br-full {
+    border-bottom-right-radius: calc(infinity * 1px);
   }
   .rounded-bl {
     border-bottom-left-radius: 0.25rem;
@@ -1573,11 +1664,20 @@
   .border-\[\#4E30FF\] {
     border-color: #4E30FF;
   }
+  .border-orang {
+    border-color: var(--color-orang);
+  }
   .border-orang\/25 {
     border-color: color-mix(in oklab, var(--color-orang) 25%, transparent);
   }
+  .border-textLight {
+    border-color: var(--color-textLight);
+  }
   .border-textLight\/25 {
     border-color: color-mix(in oklab, var(--color-textLight) 25%, transparent);
+  }
+  .border-textLight\/35 {
+    border-color: color-mix(in oklab, var(--color-textLight) 35%, transparent);
   }
   .border-textLight\/40 {
     border-color: color-mix(in oklab, var(--color-textLight) 40%, transparent);
@@ -1600,6 +1700,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/5 {
     background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
   }
@@ -1608,6 +1711,9 @@
   }
   .bg-orangBg {
     background-color: var(--color-orangBg);
+  }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1620,6 +1726,9 @@
   }
   .bg-sky-100 {
     background-color: var(--color-sky-100);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-white\/40 {
     background-color: color-mix(in oklab, var(--color-white) 40%, transparent);
@@ -1799,14 +1908,23 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
+  }
   .px-\[19px\] {
     padding-inline: 19px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-\[14px\] {
+    padding-block: 14px;
   }
   .py-\[17px\] {
     padding-block: 17px;
@@ -1862,6 +1980,13 @@
   .font-RokhBold {
     font-family: var(--font-RokhBold);
   }
+  .font-vazirMedium {
+    font-family: var(--font-vazirMedium);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -1874,9 +1999,17 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-2xl\/\[33\.6px\] {
     font-size: var(--text-2xl);
@@ -1973,6 +2106,9 @@
   }
   .text-orang {
     color: var(--color-orang);
+  }
+  .text-red-400 {
+    color: var(--color-red-400);
   }
   .text-white {
     color: var(--color-white);
