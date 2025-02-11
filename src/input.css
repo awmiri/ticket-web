@@ -109,3 +109,10 @@
 .desktop-content:hover.desktop-content::after {
   width: 100%;
 }
+
+.active {
+  color: white;
+}
+.deactivate {
+  color: rgba(255, 255, 255, 0.5);
+}
