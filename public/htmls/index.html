@@ -188,7 +188,7 @@
      -->
     <main class="main">
         <section class="found-word mt-[11px] relative">
-            <div class="container px-2  xl:px-[4.5rem] grid grid-cols-2 ">
+            <div class="container px-2  xl:px-[4.5rem] grid grid-cols-1 lg:grid-cols-2 ">
                 <div class="mt-10">
                     <div class="inline-flex items-center gap-2.5 py-[17px] px-[19px] rounded-4xl bg-orangBg border border-orang/25">
                         <span>
@@ -196,12 +196,39 @@
                         </span>
                         <span class="font-RokhBold text-orang">بسیار سفر باید تا پخته شود خامی</span>
                     </div>
-                        <h1 class="font-RokhBold text-7xl mt-10 w-[500px] relative">
+                        <h1 class="font-RokhBold text-4xl lg:text-7xl mb-6 lg:mb-0 mt-10  lg:w-[500px] relative">
                             دنیا را کشف کنید  زندگی را
                             <span class="text-blue"> تجربه </span>کنید 
-                            <img src="../imge/svg/airplaine1.svg" alt="" class="absolute right-[154px] bottom-2.5">
+                            <img src="../imge/svg/airplaine1.svg" alt="" class="lg:absolute right-[150px] bottom-1 w-[37px] h-[37px] lg:w-[59px] lg:h-[59px] ">
                         </h1>
-                        <div class="flex gap-6 mt-10">
+                        <div class="relative lg:hidden ">
+                            <img src="../imge/imge/image 2.png" alt="" class="mr-auto w-full h-[300px] lg:w-[636px] lg:h-[808px] bg-cover bg-fixed">
+                            <div class="flex flex-col gap-[7px] w-[111px] h-[131px] absolute top-10 left-10">
+                                <span class="w-[111px] h-[95px] bg-white/40 px-[17px] py-[13px] flex flex-col items-start gap-1 rounded-4xl border border-white">
+                                    <span class="flex">
+                                        <svg class="w-4 h-4 text-white">
+                                            <use href="#location"></use>
+                                        </svg>
+                                        <p class="font-RokhBold text-xs text-white">تایلند</p>
+                                    </span>
+                                    <h2 class="text-center font-RokhBold text-[40px] text-white">پاتایا</h2>
+                                </span>
+                                <span class=" flex items-center justify-center gap-[7px]">
+                                    <a href="#">
+                                        <svg class="w-7 h-7 active">
+                                            <use href="#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                    <p class="font-RokhBold text-3xl text-white">01</p>
+                                    <a href="#">
+                                        <svg class="w-7 h-7 deactivate">
+                                            <use href="#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-normal gap-6 mt-10 flex-wrap mb-7 lg:mb-0">
                             <div class="w-[86px] h-[110px] flex flex-col items-center gap-2.5">
                                 <span class="w-[86px] h-[80px] flex items-center justify-center border border-textLight/25 rounded-3xl ">
                                     <img src="../imge/svg/camping tent - emoji_u26fa.svg" alt="">
@@ -228,8 +255,8 @@
                             </div>
                         </div>
                 </div>
-                <div class="relative">
-                    <img src="../imge/imge/image 2.png" alt="" class="mr-auto w-[636px] h-[808px]">
+                <div class="relative hidden lg:block">
+                    <img src="../imge/imge/image 2.png" alt="" class="mr-auto w-full h-[271px] lg:w-[636px] lg:h-[808px]">
                     <div class="flex flex-col gap-[7px] w-[201px] h-[236px] absolute top-10 left-10">
                         <span class="w-[201px] h-[171px] bg-white/40 px-8 py-6 flex flex-col gap-1 rounded-4xl border border-white">
                             <span class="flex">
@@ -256,10 +283,10 @@
                     </div>
                 </div>
             </div>
-            <div class="w-[1077px] h-[107px] py-6 px-8 border border-textLight/35 bg-white rounded-[56px] absolute left-0 right-0 m-auto bottom-32">
-                <ul class=" flex items-center justify-center h-full w-full gap-[38.02px]">
+            <div class=" lg:w-[900px] xl:w-[1077px] lg:h-[107px] py-6 px-8 border border-textLight/35 bg-white rounded-[56px]  max-lg:container lg:absolute left-0 right-0 m-auto bottom-10 lg:bottom-32">
+                <ul class=" flex items-center max-lg:flex-wrap lg:justify-center h-full w-full gap-[25px] md:gap-[38.02px]">
                     <li class="group">
-                        <a href="#" class="flex items-center gap-2.5">
+                        <a href="#" class="flex items-center gap-1.5 md:gap-2.5 text-xs text-nowrap">
                             <svg class="w-6 h-6">
                                 <use href="#location"></use>
                             </svg>
@@ -270,7 +297,7 @@
                         </a>
                     </li>
                     <li class="group">
-                        <a href="#" class="flex items-center gap-2.5">
+                        <a href="#" class="flex items-center gap-1.5 md:gap-2.5 text-xs text-nowrap">
                             <svg class="w-6 h-6 ">
                                 <use href="#date"></use>
                             </svg>
@@ -281,7 +308,7 @@
                         </a>
                     </li>
                     <li class="group">
-                        <a href="#" class="flex items-center gap-2.5">
+                        <a href="#" class="flex items-center gap-1.5 md:gap-2.5 text-xs text-nowrap">
                             <svg class="w-6 h-6 ">
                                 <use href="#date"></use>
                             </svg>
@@ -292,7 +319,7 @@
                         </a>
                     </li>
                     <li class="group">
-                        <a href="#" class="flex items-center gap-2.5">
+                        <a href="#" class="flex items-center gap-1.5 md:gap-2.5 text-xs text-nowrap">
                             <svg class="w-6 h-6 ">
                                 <use href="#user"></use>
                             </svg>
@@ -302,7 +329,7 @@
                             </svg>
                         </a>
                     </li>
-                    <a href="#"  class=" py-[14px] px-14 bg-blue text-white rounded-4xl ">جستجو</a>
+                    <a href="#"  class=" py-[10px] md:py-[14px] px-9 md:px-14 bg-blue text-white rounded-4xl ">جستجو</a>
                 </ul>
             </div>
         </section>
