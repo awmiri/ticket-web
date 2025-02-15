@@ -6,7 +6,9 @@ let allCountryArry = [
 
 let headerImgArry = [
     { id: 1, nameCountry: "تایلند", capital: "پاتایا", imgSrc: "../imge/imge/image 2.png" },
-    { id: 2, nameCountry: "دبی", capital: "مارات متحده عربی", imgSrc: "../imge/imge/dubai/RBP06201.jpg" },
+    { id: 2, nameCountry: "امارات متحده عربی", capital: "دبی", imgSrc: "../imge/imge/dubai/RBP06201.jpg" },
+    { id: 3, nameCountry: "ایتالیا", capital: "میلان", imgSrc: "../imge/imge/italy/view-Milan-Italy.webp" },
+    { id: 4, capital: "مالزی", nameCountry: "کوالانپور", imgSrc: "../imge/imge/malezi/Malaysia-Kuala-Lumpur.jpg" },
 ]
 let $ = document
 
@@ -42,3 +44,50 @@ function openBlank() {
 function closeBlank() {
     getDarkBlank.classList.add('hidden')
 }
+
+var arryIndex = 0
+let nextPic = $.querySelector('.next-pic')
+let lastPic = $.querySelector('.pervious-pic')
+let getHeaderImg = $.querySelector('.header-img')
+let capital = $.querySelector('.capital')
+let nameCountry = $.querySelector('.nameCountry')
+let pageNumber = $.querySelector('.page-number')
+getHeaderImg.setAttribute('src', headerImgArry[arryIndex].imgSrc)
+capital.innerHTML = headerImgArry[arryIndex].capital
+nameCountry.innerHTML = headerImgArry[arryIndex].nameCountry
+pageNumber.innerHTML = "0" + headerImgArry[arryIndex].id
+
+nextPic.addEventListener('click', function (e) {
+    arryIndex++
+
+    getHeaderImg.setAttribute('src', headerImgArry[arryIndex].imgSrc)
+    capital.innerHTML = headerImgArry[arryIndex].capital
+    nameCountry.innerHTML = headerImgArry[arryIndex].nameCountry
+    pageNumber.innerHTML = "0" + headerImgArry[arryIndex].id
+
+    lastPic.classList.remove('deactivate')
+    lastPic.classList.add('active')
+    if (arryIndex === headerImgArry.length - 1) {
+        nextPic.classList.remove('active')
+        nextPic.classList.add('deactivate')
+    }
+    e.preventDefault
+
+
+
+})
+
+lastPic.addEventListener('click', function () {
+    arryIndex--
+    getHeaderImg.setAttribute('src', headerImgArry[arryIndex].imgSrc)
+    capital.innerHTML = headerImgArry[arryIndex].capital
+    nameCountry.innerHTML = headerImgArry[arryIndex].nameCountry
+    pageNumber.innerHTML = "0" + headerImgArry[arryIndex].id
+    nextPic.classList.add('active')
+    nextPic.classList.remove('deactivate')
+    if (arryIndex === 0) {
+        lastPic.classList.add('deactivate')
+        lastPic.classList.remove('active')
+        arryIndex = 0
+    }
+})
