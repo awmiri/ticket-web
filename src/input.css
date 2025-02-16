@@ -11,6 +11,7 @@
   --color-darkBgInLight: #232323;
   --color-darkBg: #1e1e1e;
   --color-lightBg: #fffbfb;
+  --color-gray: #eaeaea;
   --font-vazirBold: "Vazir Bold";
   --font-vazirMedium: "Vazir Medium";
   --font-IranBold: "Iran bold";
@@ -115,4 +116,18 @@
 }
 .deactivate {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.underline-custom {
+  position: relative;
+}
+
+.underline-custom::before {
+  content: " ";
+  height: 2px;
+  width: 45px;
+  background-color: #5264ff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
