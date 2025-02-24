@@ -2,10 +2,10 @@
 
 // landing page items 
 let allCountryArry = [
-    { id: 1, img: "../imge/imge/turky/image 37.png", toreName: "تور آنتالیا", price: 45000000, score: 4.1, day: 3, night: 4, discount: true },
-    { id: 2, img: "../imge/imge/malezi/image 39.png", toreName: 'تور دبی', price: 4.9, score: 65000000, day: 4, night: 5, discount: false },
-    { id: 3, img: "../imge/imge/dubai/Frame 31.png", toreName: 'تور مالزی', price: 4.1, score: 70000000, day: 6, night: 5, discount: true },
-    { id: 3, img: "../imge/imge/dubai/Frame 31.png", toreName: 'اصفهان', price: 4.4, score: 15000000, day: 6, night: 5, discount: true },
+    { id: 1, img: "../imge/imge/turky/image 37.png", toreName: "تور آنتالیا", price: 45000000, score: 4.1, day: 3, night: 4, discount: true, discountMount: '10%' },
+    { id: 2, img: "../imge/imge/malezi/image 39.png", toreName: 'تور دبی', price: 65000000, score: 4.9, day: 4, night: 5, discount: false, discountMount: '5%' },
+    { id: 3, img: "../imge/imge/dubai/Frame 31.png", toreName: 'تور مالزی', price: 70000000, score: 4.1, day: 6, night: 5, discount: true, discountMount: '2%' },
+    { id: 3, img: "../imge/imge/esfahan/esfahan.jpg", toreName: 'اصفهان', price: 15000000, score: 4.4, day: 6, night: 5, discount: false, discountMount: '20%' },
 ]
 
 // header img items
@@ -113,4 +113,43 @@ lastPic.addEventListener('click', function () {
         arryIndex = 0
     }
     // //////////////////
+})
+// ////////////////
+
+let getItemContainer = $.querySelector('.papular-travel')
+
+
+
+allCountryArry.forEach(function (item) {
+    getItemContainer.insertAdjacentHTML('beforeend', `
+        <div class="py-4 px-5 rounded-4xl border border-textLight/20 relative">
+            <div>
+                <img src="${item.img}" alt="" class="rounded-3xl h-[230px] w-full">
+            </div>
+            <div>
+                <div class="flex items-center justify-between mt-8">
+                    <span class="font-IranMedium text-xl text-textLight">${item.toreName}</span>
+                    <span class="flex items-center font-RokhBold text-lg text-textLight">
+                        ${item.score} <svg class="w-4 h-4"><use href="#star"></use></svg>
+                    </span>
+                </div>
+                <div class="font-IranLight text-textLight/50">${item.night} روز و ${item.day} شب</div>
+            </div>
+            <div class="flex items-center justify-between">
+                <span>
+                    <span class="font-RokhBold text-lg lg:text-xl">${item.price} تومان </span>
+                    <span class="font-IranLight text-textLight/50 text-nowrap align-bottom">هر فرد</span>
+                </span>
+                <span class="w-[35px] lg:w-[50px] h-[35px] lg:h-[50px] bg-blue rounded-full flex items-center justify-center text-white">
+                    <svg class="w-6 lg:w-7 h-6 lg:h-7 "><use href="#plus"></use></svg>
+                </span>
+            </div>
+            <div class="discount-items bg-orang w-16 h-16 absolute rounded-full right-[-10px] top-[-20px] 
+                ${item.discount === true ? 'flex' : 'hidden'} items-center justify-center flex-col text-white text-base font-RokhMedium">
+                <p>${item.discountMount}</p>
+                <p>تخفیف</p>
+            </div>
+        </div>`)
+
+
 })
