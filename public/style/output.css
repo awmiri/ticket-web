@@ -787,6 +787,9 @@
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
   }
+  .mt-28 {
+    margin-top: calc(var(--spacing) * 28);
+  }
   .mt-\[11px\] {
     margin-top: 11px;
   }
@@ -937,6 +940,9 @@
   .h-\[37px\] {
     height: 37px;
   }
+  .h-\[49px\] {
+    height: 49px;
+  }
   .h-\[80px\] {
     height: 80px;
   }
@@ -966,9 +972,6 @@
   }
   .h-\[300px\] {
     height: 300px;
-  }
-  .h-\[424px\] {
-    height: 424px;
   }
   .h-full {
     height: 100%;
@@ -1303,9 +1306,6 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-none {
     grid-template-columns: none;
   }
@@ -1492,6 +1492,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
@@ -1505,9 +1508,6 @@
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
     }
-  }
-  .gap-y-8 {
-    row-gap: calc(var(--spacing) * 8);
   }
   .gap-y-9 {
     row-gap: calc(var(--spacing) * 9);
@@ -2210,6 +2210,15 @@
   }
   .text-blue-900 {
     color: var(--color-blue-900);
+  }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
   }
   .text-orang {
     color: var(--color-orang);
@@ -3021,6 +3030,18 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.select-tour {
+  position: relative;
+}
+.select-tour::after {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #404040;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 @keyframes spin {
   to {
