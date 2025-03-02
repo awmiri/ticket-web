@@ -769,9 +769,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
   }
@@ -987,9 +984,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1462,9 +1456,6 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
-  }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
@@ -1473,9 +1464,6 @@
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -1727,14 +1715,8 @@
   .border-\[\#4E30FF\] {
     border-color: #4E30FF;
   }
-  .border-orang {
-    border-color: var(--color-orang);
-  }
   .border-orang\/25 {
     border-color: color-mix(in oklab, var(--color-orang) 25%, transparent);
-  }
-  .border-textLight {
-    border-color: var(--color-textLight);
   }
   .border-textLight\/20 {
     border-color: color-mix(in oklab, var(--color-textLight) 20%, transparent);
@@ -1765,9 +1747,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/5 {
     background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
@@ -1998,9 +1977,6 @@
   .px-\[19px\] {
     padding-inline: 19px;
   }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
-  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
@@ -2210,15 +2186,6 @@
   }
   .text-blue-900 {
     color: var(--color-blue-900);
-  }
-  .text-gray-200 {
-    color: var(--color-gray-200);
-  }
-  .text-gray-300 {
-    color: var(--color-gray-300);
-  }
-  .text-gray-400 {
-    color: var(--color-gray-400);
   }
   .text-orang {
     color: var(--color-orang);
@@ -3031,10 +2998,11 @@
   right: 0;
   bottom: 0;
 }
-.select-tour {
+.select-tour_best-sell {
+  color: #404040 !important;
   position: relative;
 }
-.select-tour::after {
+.select-tour_best-sell::after {
   content: " ";
   width: 100%;
   height: 1px;
@@ -3042,6 +3010,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.best-sell--item {
+  color: #b0bec5;
 }
 @keyframes spin {
   to {

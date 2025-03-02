@@ -177,3 +177,14 @@ getShowMoreItemBtn.addEventListener('click', function () {
 
 
 })
+
+
+let getItems = $.querySelectorAll('.best-sell--item')
+
+getItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault()
+        $.querySelector('.select-tour_best-sell').classList.remove('select-tour_best-sell')
+        this.classList.add('select-tour_best-sell')
+    })
+})
