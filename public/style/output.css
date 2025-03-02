@@ -3001,6 +3001,7 @@
 .select-tour_best-sell {
   color: #404040 !important;
   position: relative;
+  transition: all 150ms ease-in;
 }
 .select-tour_best-sell::after {
   content: " ";
@@ -3010,9 +3011,11 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: all 150ms ease-in;
 }
 .best-sell--item {
   color: #b0bec5;
+  transition: all 150ms ease-in;
 }
 @keyframes spin {
   to {

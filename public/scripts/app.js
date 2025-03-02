@@ -119,7 +119,7 @@ lastPic.addEventListener('click', function () {
 let getItemContainer = $.querySelector('.papular-travel')
 
 
-
+// ////////create the travel list
 allCountryArry.forEach(function (item) {
     getItemContainer.insertAdjacentHTML('beforeend', `
     <div class="py-4 px-5 rounded-4xl border border-textLight/20 relative transition item ${item.id > 3 ? 'h-0 opacity-0' : ''} ">
@@ -152,8 +152,8 @@ allCountryArry.forEach(function (item) {
             <p>تخفیف</p>
         </div>
     </div>`)
-
 })
+// evvet for show more option btn
 let getShowMoreItemBtn = $.querySelector('.btn')
 getShowMoreItemBtn.addEventListener('click', function () {
     if (getShowMoreItemBtn.classList.contains('none')) {
@@ -174,17 +174,18 @@ getShowMoreItemBtn.addEventListener('click', function () {
         })
 
     }
-
-
 })
+// ////////////////////////////////////////
 
-
+// //////////////////////event for chose a kind of travel
 let getItems = $.querySelectorAll('.best-sell--item')
 
 getItems.forEach((item) => {
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', function (e) {
         e.preventDefault()
         $.querySelector('.select-tour_best-sell').classList.remove('select-tour_best-sell')
         this.classList.add('select-tour_best-sell')
+
     })
 })
+// /////////////////////////////////
