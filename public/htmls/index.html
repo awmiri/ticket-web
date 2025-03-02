@@ -41,6 +41,10 @@
     <symbol id="plus" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </symbol>
+    <symbol id="filter" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+    </symbol>
+      
       
       
     
@@ -399,16 +403,19 @@
         <!-- ----------------------why-travel section----------------------- -->
          <section class="why-travel mt-24 bg relative">
             <div class="container">
+                <!--why-travel title  -->
                 <div class=" mb-10">
                     <!-- pupular-travel section title -->
                     <span class="underline-custom flex items-center font-RokhBold text-2xl md:text-3xl">چرا سفر کن
                         <img src="../imge/svg/red question mark - emoji_u2753.svg" alt="">
                     </span>
                 </div>
-                <div class="absolute w-full h-full top-0 left-0 right-0 mx-auto">
+                <!-- why-travel background -->
+                <div class="absolute w-full h-full top-0 left-0 right-0 mx-auto hidden md:inline-block">
                     <img src="../imge/svg/map.png" alt="">
                 </div>
-                <div class="w-full bg-blue h-[424px] rounded-[50px] grid grid-cols-3 p-12 gap-6">
+                <!-- why-travel content -->
+                <div class="w-full bg-blue  md:h-[424px] rounded-[50px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-wrap p-12 gap-6 gap-y-9">
                     <div class="bg-blueLight z-10 rounded-4xl flex items-center flex-col gap-16">
                         <div class="bg-blueLight w-28 h-28 flex items-center justify-center rounded-full m-[-20px]">
                             <img src="../imge/svg/clock 430 -emoji_u1f55f.svg" alt="">
@@ -440,6 +447,7 @@
                 </div>
             </div>
          </section>
+         <!-----------------------best sell tour ------------------------------>
     </main>
     <div class="dark-blank w-screen hidden h-screen absolute top-0 bg-black/5 transition-all"></div>
     <script src="../scripts/app.js"></script>
