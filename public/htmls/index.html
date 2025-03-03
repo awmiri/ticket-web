@@ -450,14 +450,15 @@
          <!-----------------------best sell tour ------------------------------>
          <section class="best-sell mt-28">
             <div class="container">
-                <div class="flex items-center justify-between">
+                <!-------------best sell header--------->
+                <div class="flex items-start md:items-center justify-between h-fit">
                     <!-- best sell section title & select box -->
-                     <div class="flex gap-7 items-center">
-                        <span class="underline-custom flex items-center font-RokhBold text-2xl md:text-3xl">پرفروش ترین تور ها
+                     <div class="flex gap-7  flex-col md:flex-row relative">
+                        <span class="underline-custom flex items-center font-RokhBold text-nowrap text-2xl md:text-3xl">پرفروش ترین تور ها
                             <img src="../imge/svg/bomb - emoji_u1f4a3.svg" alt="">
                         </span>
                         <!-- best sell select box -->
-                        <ul class="flex gap-6 font-RokhBold">
+                        <ul class="flex gap-6 font-RokhBold items-end md:items-center absolute md:relative bottom-[-60px] md:bottom-0 left-0 right-0 text-nowrap ">
                             <a href="" class="best-sell--item select-tour_best-sell">
                                 <li class="">همه تور ها</li>
                             </a> 
@@ -470,12 +471,16 @@
                             <a href="" class="best-sell--item">
                                 <li class="">تور آسیا</li>
                             </a> 
+                            <a href="" class="">
+                                <svg class="w-7 h-6 inline md:hidden">
+                                    <use href="#filter"></use>
+                                </svg>
+                            </a> 
                         </ul>
-                     </div>
-                    
+                     </div>   
                     <!-- best sell section btn -->
-                     <div class="flex items-center gap-5 h-[49px]">
-                         <svg class="w-7 h6">
+                     <div class="flex items-center  md:gap-5">
+                         <svg class="w-7 h6 hidden md:block">
                             <use href="#filter"></use>
                         </svg>
                          <a class="px-6 py-2.5 bg-gray rounded-3xl font-IranLight text-nowrap text-base md:cursor-pointer">دیدن همه</a>
