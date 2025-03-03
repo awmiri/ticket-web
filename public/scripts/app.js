@@ -6,6 +6,20 @@ let allCountryArry = [
     { id: 2, img: "../imge/imge/dubai/Frame 31.png", toreName: 'تور دبی', price: 65000000, score: 4.9, day: 4, night: 5, discount: false, discountMount: '5%' },
     { id: 3, img: "../imge/imge/malezi/image 39.png", toreName: 'تور مالزی', price: 70000000, score: 4.1, day: 6, night: 5, discount: true, discountMount: '2%' },
     { id: 4, img: "../imge/imge/esfahan/esfahan.jpg", toreName: 'اصفهان', price: 15000000, score: 4.4, day: 6, night: 5, discount: false, discountMount: '20%' },
+    { id: 5, img: "../imge/imge/tehran/uptown-teran.webp", toreName: 'تهران', price: 10000000, score: 5, day: 3, night: 4, discount: false, discountMount: '20%' },
+    { id: 6, img: "../imge/imge/kish/کیش-780x470.jpg", toreName: ' کیش', price: 40000000, score: 4.4, day: 5, night: 4, discount: true, discountMount: '20%' },
+]
+// Europe items 
+let europeArry = [
+    { id: 1, img: "../imge/imge/Europe/franch.jpg", toreName: "روسیه", price: 100000000, score: 4.9, day: 3, night: 4, discount: false, discountMount: '10%' },
+    { id: 2, img: "../imge/imge/Europe/spain.webp", toreName: 'اسپانیا', price: 65000000, score: 3.5, day: 4, night: 5, discount: false, discountMount: '5%' },
+    { id: 3, img: "../imge/imge/malezi/image 39.png", toreName: 'تور فرانسه', price: 200000000, score: 5, day: 6, night: 5, discount: true, discountMount: '2%' },
+]
+// asia items 
+let asiaArry = [
+    { id: 1, img: "../imge/imge/asia/shanghai.jpg", toreName: "تور شانگهای", price: 150000000, score: 4.9, day: 3, night: 4, discount: false, discountMount: '10%' },
+    { id: 2, img: "../imge/imge/asia/taflis.jpg", toreName: 'تور تفلیس', price: 65000000, score: 3.5, day: 4, night: 5, discount: true, discountMount: '5%' },
+    { id: 3, img: "../imge/imge/asia/Yerevan.jpg", toreName: 'تورایروان', price: 70000000, score: 5, day: 6, night: 5, discount: true, discountMount: '2%' },
 ]
 
 // header img items
@@ -155,7 +169,8 @@ allCountryArry.forEach(function (item) {
 })
 // evvet for show more option btn
 let getShowMoreItemBtn = $.querySelector('.btn')
-getShowMoreItemBtn.addEventListener('click', function () {
+getShowMoreItemBtn.addEventListener('click', function (e) {
+    e.preventDefault()
     if (getShowMoreItemBtn.classList.contains('none')) {
         this.classList.remove('none')
         this.classList.add('show')

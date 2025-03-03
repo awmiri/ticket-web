@@ -390,7 +390,7 @@
                 <div class="papular-travel mt-[49px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 </div>    
                 <!-- pupular-travel arrow btn -->
-                <div class=" flex items-center justify-center mt-10 btn none transition">
+                <div class=" flex items-center justify-center mt-10 btn none transition relative z-10">
                     <span class="w-14 h-14 bg-gray flex items-center justify-center rounded-full text-white"> 
                         <!-- arrow icon -->
                         <svg class="w-7 h-7">
@@ -459,18 +459,18 @@
                         </span>
                         <!-- best sell select box -->
                         <ul class="flex gap-6 font-RokhBold items-end md:items-center absolute md:relative bottom-[-60px] md:bottom-0 left-0 right-0 text-nowrap ">
-                            <a href="" class="best-sell--item select-tour_best-sell">
-                                <li class="">همه تور ها</li>
-                            </a> 
-                            <a href="" class="best-sell--item">
-                                <li class="">تور ایران</li>
-                            </a> 
-                            <a href="" class="best-sell--item">
-                                <li class="">تور اروپا</li>
-                            </a> 
-                            <a href="" class="best-sell--item">
-                                <li class="">تور آسیا</li>
-                            </a> 
+                            <li class="" data-id-header="all-tore">
+                                <a href="" class="best-sell--item select-tour_best-sell">همه تور ها</a> 
+                            </li>
+                            <li class="" data-id-header="iran-tore">
+                                <a href="" class="best-sell--item">تور ایران</a> 
+                            </li>
+                            <li class="" data-id-header="eroupe-tore">
+                                <a href="" class="best-sell--item">تور اروپا</a> 
+                            </li>
+                            <li class="" data-id-header="asia-tore">
+                                <a href="" class="best-sell--item">تور آسیا</a> 
+                            </li>
                             <a href="" class="">
                                 <svg class="w-7 h-6 inline md:hidden">
                                     <use href="#filter"></use>
@@ -488,6 +488,9 @@
                 </div>
             </div>
          </section>
+         <img src="../imge/imge/asia/shanghai.jpg" alt="">
+         <img src="../imge/imge/asia/taflis.jpg" alt="">
+         <img src="../imge/imge/asia/Yerevan.jpg" alt="">
     </main>
     <div class="dark-blank w-screen hidden h-screen absolute top-0 bg-black/5 transition-all"></div>
     <script src="../scripts/app.js"></script>
